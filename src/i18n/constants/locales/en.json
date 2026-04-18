@@ -1,0 +1,25 @@
+{
+  "app": { "name": "Lean Plate Diet Café", "tagline": "Fuel your goals. One meal at a time." },
+  "auth": {
+    "enterMobile": "Enter your mobile",
+    "otpSent": "We'll send a 6-digit OTP to verify",
+    "sendOtp": "Send OTP",
+    "verifyOtp": "Verify OTP",
+    "resend": "Resend OTP",
+    "change": "Change"
+  },
+  "goal": {
+    "title": "What's your goal today?",
+    "subtitle": "Your meal plan is personalised based on your fitness goal.",
+    "FAT_LOSS": "Fat Loss",
+    "MUSCLE_GAIN": "Muscle Gain",
+    "MAINTENANCE": "Maintenance"
+  },
+  "menu": { "title": "Menu", "allItems": "All Items", "addToOrder": "+ Add to Order", "noItems": "No items found" },
+  "checkout": { "title": "Your Order", "pickSlot": "Pick a Slot", "placeOrder": "Place Order", "orderPlaced": "Order Placed!" },
+  "orders": { "title": "My Orders", "active": "Active Order", "history": "History", "reorder": "Reorder" },
+  "progress": { "title": "Progress Tracker", "logWeight": "Log Today's Weight", "logged": "Logged!" },
+  "plans": { "title": "Subscription Plans", "save": "Save up to 30% vs individual orders", "pause": "Pause Plan", "resume": "Resume Plan" },
+  "profile": { "title": "My Profile", "signOut": "Sign Out" },
+  "common": { "back": "Back", "loading": "Loading...", "retry": "Retry", "seeAll": "See all →" }
+}

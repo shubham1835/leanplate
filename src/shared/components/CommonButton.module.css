@@ -1,0 +1,66 @@
+.btn {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  border-radius: 11px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.15s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  line-height: 1;
+}
+
+/* Sizes */
+.sm  { padding: 8px 16px;  font-size: 12px; }
+.md  { padding: 12px 22px; font-size: 13px; }
+.lg  { padding: 15px 28px; font-size: 15px; }
+
+/* Variants */
+.primary {
+  background: #16a34a;
+  color: #fff;
+  border-color: #16a34a;
+  box-shadow: 0 4px 18px rgba(22,163,74,0.25);
+}
+.primary:hover:not(.disabled) { filter: brightness(1.08); }
+
+.outline {
+  background: transparent;
+  color: #16a34a;
+  border-color: rgba(22,163,74,0.5);
+}
+.outline:hover:not(.disabled) { background: rgba(22,163,74,0.06); }
+
+.ghost {
+  background: rgba(22,163,74,0.08);
+  color: #16a34a;
+  border-color: rgba(22,163,74,0.15);
+}
+.ghost:hover:not(.disabled) { background: rgba(22,163,74,0.14); }
+
+.flat {
+  background: #f1f5f9;
+  color: #475569;
+  border-color: #e2e8f0;
+}
+.flat:hover:not(.disabled) { background: #e2e8f0; }
+
+/* Modifiers */
+.full     { width: 100%; }
+.disabled { opacity: 0.45; cursor: not-allowed; }
+.loading  { cursor: wait; opacity: 0.7; }
+
+/* Spinner */
+.spinner {
+  width: 16px; height: 16px;
+  border: 2px solid rgba(255,255,255,0.25);
+  border-top-color: currentColor;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }

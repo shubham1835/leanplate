@@ -1,0 +1,45 @@
+/* orders/styles/styles.module.css */
+.page{background:#f8fafc;min-height:100%;padding-bottom:90px;max-width:900px;margin:0 auto;}
+@media(min-width:768px){.page{padding-bottom:32px;}}
+.header{padding:18px 20px 0;}
+.title{font-size:22px;font-weight:800;margin-bottom:12px;color:#1e293b;}
+.tabs{display:flex;gap:8px;margin-bottom:4px;}
+.tab{background:#f1f5f9;color:#475569;border:1.5px solid #e2e8f0;border-radius:20px;padding:8px 18px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit;text-transform:capitalize;transition:all 0.15s;}
+.tabActive{background:#16a34a;color:#fff;border-color:#16a34a;}
+.body{padding:14px 20px;}
+.empty{text-align:center;color:#94a3b8;padding:60px 0;}
+.emptyIcon{font-size:40px;margin-bottom:12px;}
+
+.activeCard{background:linear-gradient(135deg,#f0fdf4,#ffffff);border:1.5px solid rgba(22,163,74,0.2);border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:12px;box-shadow:0 2px 8px rgba(0,0,0,0.05);}
+.activeTop{display:flex;justify-content:space-between;}
+.activeStatus{font-size:11px;font-weight:700;letter-spacing:1px;}
+.activeId{font-size:18px;font-weight:800;margin-top:4px;color:#1e293b;}
+.activeRight{text-align:right;}
+.activeTotal{font-size:20px;font-weight:900;color:#16a34a;}
+.activeSlot{font-size:11px;color:#94a3b8;}
+.activeItems{font-size:13px;color:#475569;}
+
+.progressSteps{display:flex;flex-direction:column;gap:0;}
+.stepRow{display:flex;gap:10px;}
+.stepDotCol{display:flex;flex-direction:column;align-items:center;}
+.dot{width:20px;height:20px;border-radius:50%;background:#e2e8f0;border:2px solid #e2e8f0;display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;font-weight:900;flex-shrink:0;}
+.dotDone{background:#16a34a;border-color:#16a34a;}
+.stepConnector{width:2px;height:16px;background:#e2e8f0;margin:2px 0;}
+.stepConnectorDone{background:#16a34a;}
+.stepText{padding-top:2px;padding-bottom:12px;}
+.stepLabel{font-size:13px;color:#94a3b8;}
+.stepLabelDone{color:#1e293b;font-weight:700;}
+.stepEta{font-size:11px;color:#16a34a;margin-top:2px;}
+
+.waTrack{display:block;background:rgba(37,211,102,0.08);border:1px solid rgba(37,211,102,0.25);border-radius:10px;padding:10px 14px;text-align:center;color:#25d366;font-size:13px;font-weight:700;}
+
+.histCard{background:#ffffff;border:1px solid #e2e8f0;border-radius:14px;padding:14px;margin-bottom:10px;display:flex;flex-direction:column;gap:8px;box-shadow:0 1px 3px rgba(0,0,0,0.04);transition:box-shadow 0.15s;}
+.histCard:hover{box-shadow:0 4px 12px rgba(0,0,0,0.08);}
+.histTop{display:flex;justify-content:space-between;}
+.histId{font-size:13px;font-weight:700;color:#94a3b8;}
+.histDate{font-size:12px;color:#94a3b8;}
+.histRight{text-align:right;}
+.histTotal{font-size:15px;font-weight:900;color:#16a34a;}
+.histItems{font-size:13px;color:#1e293b;}
+.histMacros{display:flex;gap:12px;font-size:12px;color:#94a3b8;}
+

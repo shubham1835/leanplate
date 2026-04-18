@@ -1,0 +1,99 @@
+.page { background:#f8fafc; min-height:100%; padding-bottom:90px; max-width:900px; margin:0 auto; }
+
+@media (min-width: 768px) {
+  .page { padding-bottom: 32px; }
+}
+
+.stickyTop {
+  background:#ffffff; border-bottom:1px solid #e2e8f0;
+  padding:14px 20px 0; position:sticky; top:0; z-index:10;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.topRow  { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
+.title   { font-size:22px; font-weight:800; color:#1e293b; }
+
+.filterBtn {
+  background:#f1f5f9; border:1.5px solid #e2e8f0; color:#475569;
+  border-radius:20px; padding:7px 14px; font-size:12px; font-weight:700;
+  cursor:pointer; font-family:inherit; transition:all 0.15s;
+}
+.filterBtn:hover { background:#e2e8f0; }
+
+.searchBar {
+  background:#f8fafc; border:1px solid #e2e8f0;
+  border-radius:10px; display:flex; align-items:center;
+  gap:8px; padding:10px 14px; margin-bottom:12px;
+  transition: border-color 0.15s;
+}
+.searchBar:focus-within { border-color: rgba(22,163,74,0.5); }
+.searchInput {
+  flex:1; background:none; border:none; outline:none;
+  font-size:14px; color:#1e293b; font-family:inherit;
+}
+.searchInput::placeholder { color:#94a3b8; }
+.clearBtn {
+  background:none; border:none; color:#94a3b8;
+  cursor:pointer; font-size:16px; font-family:inherit; padding:0;
+}
+
+.catRow { display:flex; gap:8px; overflow-x:auto; padding-bottom:12px; }
+.catRow::-webkit-scrollbar { display:none; }
+.catPill {
+  background:#f1f5f9; color:#475569; border:1.5px solid #e2e8f0;
+  border-radius:20px; padding:8px 16px; font-size:12px; font-weight:700;
+  cursor:pointer; white-space:nowrap; flex-shrink:0; font-family:inherit;
+  transition: all 0.15s;
+}
+.catPillActive { background:#16a34a; color:#fff; border-color:#16a34a; }
+
+.body    { padding:14px 20px 0; }
+.itemList{ display:flex; flex-direction:column; gap:12px; }
+
+.empty     { text-align:center; color:#94a3b8; padding:60px 0; }
+.emptyIcon { font-size:40px; margin-bottom:12px; }
+
+.itemCard {
+  background:#ffffff; border:1px solid #e2e8f0;
+  border-radius:16px; padding:16px;
+  box-shadow:0 1px 4px rgba(0,0,0,0.04);
+  transition: box-shadow 0.15s;
+}
+.itemCard:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.itemTop  { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px; gap:10px; }
+.itemLeft { display:flex; gap:12px; align-items:flex-start; flex:1; }
+.itemEmoji{
+  width:48px; height:48px; border-radius:12px; flex-shrink:0;
+  background:#fef9c3;
+  display:flex; align-items:center; justify-content:center; font-size:26px;
+}
+.itemName  { font-size:14px; font-weight:700; margin-bottom:5px; line-height:1.2; color:#1e293b; }
+.tagRow    { display:flex; gap:5px; flex-wrap:wrap; }
+.comboDesc { font-size:11px; color:#94a3b8; margin-top:4px; line-height:1.4; }
+.itemPrice { font-size:18px; font-weight:900; color:#16a34a; flex-shrink:0; }
+
+.macroRow {
+  background:#f8fafc; border-radius:10px;
+  display:grid; grid-template-columns:repeat(4,1fr);
+  padding:10px 0; margin-bottom:12px;
+  border: 1px solid #e2e8f0;
+}
+
+.goalChips { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:12px; }
+
+.addBtn {
+  background:#16a34a; color:#fff; border:none;
+  border-radius:10px; padding:12px 0; font-size:13px;
+  font-weight:700; cursor:pointer; font-family:inherit; width:100%;
+  box-shadow:0 4px 12px rgba(22,163,74,0.22);
+  transition: filter 0.15s;
+}
+.addBtn:hover { filter: brightness(1.06); }
+
+.qtyRow { display:flex; align-items:center; gap:12px; }
+.qtyMinus{ width:40px; height:40px; border-radius:10px; background:#f1f5f9; border:1px solid #e2e8f0; color:#475569; font-size:20px; cursor:pointer; font-family:inherit; display:flex; align-items:center; justify-content:center; }
+.qtyPlus { width:40px; height:40px; border-radius:10px; background:#16a34a; border:none; color:#fff; font-size:20px; cursor:pointer; font-family:inherit; display:flex; align-items:center; justify-content:center; }
+.qtyNum  { font-size:18px; font-weight:900; color:#1e293b; }
+.lineTotal{ flex:1; text-align:right; font-size:16px; font-weight:900; color:#16a34a; }
+

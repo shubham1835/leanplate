@@ -1,0 +1,54 @@
+.page {
+  min-height: 100dvh; display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: 28px; gap: 32px; background: #f8fafc;
+}
+
+.logoWrap { text-align: center; }
+.logoIcon {
+  width: 64px; height: 64px; border-radius: 18px; margin: 0 auto 10px;
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 30px;
+}
+.logoSub { font-size: 11px; letter-spacing: 5px; color: #16a34a; font-weight: 700; }
+
+.card {
+  width: 100%; max-width: 380px;
+  background: #ffffff; border: 1px solid #e2e8f0;
+  border-radius: 20px; padding: 28px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  display: flex; flex-direction: column; gap: 18px;
+}
+
+.heading    { font-size: 22px; font-weight: 800; color: #1e293b; }
+.subheading { font-size: 13px; color: #94a3b8; display: flex; align-items: center; gap: 8px; margin-top: -8px; }
+
+.changeBtn {
+  background: none; border: none; color: #16a34a;
+  font-size: 13px; font-weight: 700; cursor: pointer;
+  font-family: inherit; padding: 0;
+}
+
+.otpRow { display: flex; gap: 8px; justify-content: center; }
+
+.otpInput {
+  width: 48px; height: 58px; text-align: center;
+  font-size: 22px; font-weight: 900;
+  background: #f8fafc; border: 1.5px solid #e2e8f0;
+  border-radius: 12px; color: #1e293b;
+  outline: none; font-family: inherit;
+  transition: all 0.15s;
+}
+.otpInput:focus    { border-color: rgba(22,163,74,0.5); box-shadow: 0 0 0 3px rgba(22,163,74,0.08); }
+.otpFilled         { background: #dcfce7; border-color: #16a34a; color: #16a34a; }
+
+.verifying { font-size: 14px; color: #16a34a; font-weight: 700; text-align: center; padding: 10px 0; }
+
+.resend    { font-size: 13px; color: #94a3b8; text-align: center; }
+.resendBtn {
+  background: none; border: none; color: #16a34a;
+  font-size: 13px; font-weight: 700; cursor: pointer;
+  font-family: inherit;
+}
+

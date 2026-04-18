@@ -1,0 +1,64 @@
+.page{background:#f8fafc;min-height:100%;padding-bottom:90px;max-width:900px;margin:0 auto;}
+@media(min-width:768px){.page{padding-bottom:32px;}}
+.header{padding:18px 20px 0;}
+.title{font-size:22px;font-weight:800;margin-bottom:12px;color:#1e293b;}
+.tabs{display:flex;gap:8px;margin-bottom:4px;}
+.tab{background:#f1f5f9;color:#475569;border:1.5px solid #e2e8f0;border-radius:20px;padding:8px 14px;font-size:11px;font-weight:700;cursor:pointer;font-family:inherit;transition:all 0.15s;}
+.tabActive{background:#16a34a;color:#fff;border-color:#16a34a;}
+.body{padding:16px 20px;display:flex;flex-direction:column;gap:14px;}
+
+.profileCard{background:linear-gradient(135deg,#f0fdf4,#ffffff);border:1px solid rgba(22,163,74,0.2);border-radius:18px;padding:20px;text-align:center;box-shadow:0 1px 4px rgba(0,0,0,0.04);}
+.avatar{width:72px;height:72px;border-radius:50%;background:#dcfce7;border:3px solid rgba(22,163,74,0.3);margin:0 auto 12px;display:flex;align-items:center;justify-content:center;font-size:34px;}
+.profileName{font-size:22px;font-weight:900;color:#1e293b;}
+.profilePhone{font-size:13px;color:#94a3b8;margin-top:2px;}
+
+.statsGrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.statCard{background:#ffffff;border:1px solid #e2e8f0;border-radius:12px;padding:14px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,0.04);}
+.statIcon{font-size:24px;margin-bottom:4px;}
+.statVal{font-size:20px;font-weight:900;color:#1e293b;}
+.statLabel{font-size:11px;color:#94a3b8;margin-top:2px;}
+
+.menuList{background:#ffffff;border:1px solid #e2e8f0;border-radius:14px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.04);}
+.menuItem{width:100%;background:none;border:none;border-bottom:1px solid #f1f5f9;padding:14px 16px;display:flex;align-items:center;gap:12px;cursor:pointer;font-family:inherit;text-align:left;transition:background 0.12s;}
+.menuItem:last-child{border-bottom:none;}
+.menuItem:hover{background:#f8fafc;}
+.menuIcon{font-size:20px;}
+.menuLabel{flex:1;font-size:14px;font-weight:600;color:#1e293b;}
+.menuArrow{color:#94a3b8;}
+.signOut{width:100%;background:transparent;border:1px solid rgba(220,38,38,0.3);border-radius:12px;padding:14px;color:#dc2626;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit;transition:background 0.12s;}
+.signOut:hover{background:#fee2e2;}
+
+.refCard{background:linear-gradient(135deg,#f0fdf4,#ffffff);border:1px solid rgba(22,163,74,0.2);border-radius:16px;padding:18px;text-align:center;box-shadow:0 1px 4px rgba(0,0,0,0.04);}
+.refLabel{font-size:12px;color:#16a34a;font-weight:700;letter-spacing:1px;margin-bottom:8px;}
+.refCode{background:#f8fafc;border-radius:12px;padding:14px 20px;font-size:28px;font-weight:900;color:#d97706;letter-spacing:6px;border:1px solid #e2e8f0;margin-bottom:8px;}
+.refSub{font-size:12px;color:#94a3b8;}
+
+.sectionLabel{font-size:11px;color:#94a3b8;font-weight:700;letter-spacing:0.5px;text-transform:uppercase;}
+.clientCard{background:#ffffff;border:1px solid #e2e8f0;border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);}
+.clientAvatar{width:36px;height:36px;border-radius:50%;background:#dcfce7;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.clientInfo{flex:1;}
+.clientName{font-size:14px;font-weight:700;color:#1e293b;}
+.clientOrders{font-size:11px;color:#94a3b8;}
+.clientEarned{font-size:14px;font-weight:800;color:#16a34a;}
+
+.pointsHero{background:linear-gradient(135deg,#fefce8,#ffffff);border:2px solid rgba(217,119,6,0.2);border-radius:18px;padding:20px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 1px 4px rgba(0,0,0,0.04);}
+.pointsBig{font-size:48px;font-weight:900;color:#d97706;}
+.pointsSub{font-size:13px;color:#94a3b8;}
+
+.milestoneCard{background:#ffffff;border:1px solid #e2e8f0;border-radius:14px;padding:14px;display:flex;align-items:center;gap:12px;box-shadow:0 1px 3px rgba(0,0,0,0.04);}
+.milestoneInfo{flex:1;}
+.milestoneName{font-size:14px;font-weight:700;margin-bottom:3px;color:#1e293b;}
+.milestoneStatus{font-size:12px;color:#475569;}
+.milestoneTrack{height:4px;background:#e2e8f0;border-radius:2px;overflow:hidden;margin-top:5px;}
+.milestoneFill{height:100%;background:#d97706;border-radius:2px;}
+.milestonePts{font-size:15px;font-weight:800;color:#d97706;flex-shrink:0;}
+
+.streakCard{background:#fefce8;border:1px solid rgba(217,119,6,0.15);border-radius:14px;padding:16px;}
+.streakTitle{font-size:14px;font-weight:700;margin-bottom:14px;color:#1e293b;}
+.streakRow{display:flex;gap:6px;justify-content:space-between;}
+.streakDay{flex:1;text-align:center;}
+.streakDot{width:100%;padding-top:100%;position:relative;border-radius:50%;border:2px solid transparent;margin-bottom:4px;display:flex;align-items:center;justify-content:center;font-size:0;}
+.streakDot::after{content:attr(data-emoji);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:14px;}
+.streakDayLabel{font-size:9px;color:#94a3b8;}
+.streakMsg{text-align:center;color:#d97706;font-weight:700;font-size:13px;margin-top:12px;}
+

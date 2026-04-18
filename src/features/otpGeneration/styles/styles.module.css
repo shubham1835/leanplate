@@ -1,0 +1,50 @@
+.page {
+  min-height: 100dvh; display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: 28px; gap: 32px; background: #f8fafc;
+}
+
+.logoWrap { text-align: center; }
+
+.logoIcon {
+  width: 72px; height: 72px; border-radius: 20px; margin: 0 auto 14px;
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 36px; box-shadow: 0 8px 32px rgba(22,163,74,0.2);
+}
+
+.logoSub    { font-size: 11px; letter-spacing: 5px; color: #16a34a; font-weight: 700; margin-bottom: 4px; }
+.logoTitle  { font-size: 28px; font-weight: 900; letter-spacing: -0.5px; color: #1e293b; }
+.logoTagline{ font-size: 13px; color: #94a3b8; margin-top: 8px; }
+
+.card {
+  width: 100%; max-width: 380px;
+  background: #ffffff; border: 1px solid #e2e8f0;
+  border-radius: 20px; padding: 28px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  display: flex; flex-direction: column; gap: 16px;
+}
+
+.heading    { font-size: 22px; font-weight: 800; color: #1e293b; }
+.subheading { font-size: 13px; color: #94a3b8; margin-top: -8px; }
+.btnWrap    { margin-top: 4px; }
+
+.legal  { font-size: 12px; color: #94a3b8; text-align: center; }
+.footer { font-size: 12px; color: #94a3b8; }
+
+
+/* Skip + divider */
+.divider {
+  display: flex; align-items: center; gap: 10px; margin: 4px 0;
+}
+.dividerLine { flex: 1; height: 1px; background: #1e1e1e; }
+.dividerText { font-size: 12px; color: #475569; }
+
+.skipBtn {
+  width: 100%; background: transparent;
+  border: 1.5px solid #1e1e1e; border-radius: 11px;
+  padding: 12px; color: #94a3b8; font-size: 13px;
+  font-weight: 700; cursor: pointer; font-family: inherit;
+  transition: all 0.15s;
+}
+.skipBtn:hover { border-color: #2a2a2a; color: #f1f5f9; }

@@ -1,0 +1,73 @@
+.nav {
+  display: flex;
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  padding-bottom: env(safe-area-inset-bottom, 8px);
+  flex-shrink: 0;
+  box-shadow: 0 -1px 8px rgba(0,0,0,0.06);
+}
+
+.tab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0 6px;
+  gap: 3px;
+  text-decoration: none;
+  position: relative;
+}
+
+.iconWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 19px;
+  line-height: 1;
+  transition: filter 0.15s;
+}
+
+.iconActive {
+  filter: none;
+}
+
+.badge {
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  background: #dc2626;
+  color: #fff;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  font-size: 9px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  font-family: inherit;
+}
+
+.labelActive {
+  color: #16a34a;
+}
+
+.indicator {
+  width: 20px;
+  height: 2.5px;
+  background: #16a34a;
+  border-radius: 2px;
+  margin-top: 1px;
+}

@@ -1,0 +1,155 @@
+.page {
+  background: #f8fafc;
+  min-height: 100%;
+  padding-bottom: 90px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .page { padding-bottom: 32px; padding-top: 8px; }
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(180deg, #f0fdf4 0%, #f8fafc 100%);
+  padding: 16px 20px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+.heroTop { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 14px; }
+.brand   { font-size: 11px; color: #16a34a; font-weight: 800; letter-spacing: 3px; margin-bottom: 4px; }
+.greeting{ font-size: 22px; font-weight: 800; line-height: 1.2; color: #1e293b; }
+.date    { font-size: 12px; color: #94a3b8; margin-top: 2px; }
+
+.pointsCard {
+  background: #dcfce7; border: 1px solid rgba(22,163,74,0.25);
+  border-radius: 12px; padding: 8px 12px; text-align: center;
+}
+.pointsVal   { font-size: 18px; font-weight: 900; color: #16a34a; }
+.pointsLabel { font-size: 9px; color: #15803d; letter-spacing: 0.5px; font-weight: 600; }
+
+.chipRow { display: flex; gap: 10px; margin-bottom: 16px; }
+
+.streakChip {
+  flex: 2; background: #fefce8; border: 1px solid rgba(217,119,6,0.2);
+  border-radius: 12px; padding: 10px 14px; display: flex; align-items: center; gap: 10px;
+}
+.streakIcon  { font-size: 22px; }
+.streakTitle { font-size: 14px; font-weight: 800; color: #d97706; }
+.streakSub   { font-size: 11px; color: #94a3b8; }
+
+.goalChip {
+  flex: 1; border-radius: 12px; padding: 10px 12px;
+  cursor: pointer; font-family: inherit; text-align: center;
+  display: flex; flex-direction: column; align-items: center; gap: 3px;
+}
+.goalChipIcon  { font-size: 20px; }
+.goalChipLabel { font-size: 9px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; }
+
+/* Body */
+.body { padding: 0 20px; }
+.section { margin-top: 20px; }
+.sectionLabel {
+  font-size: 11px; color: #94a3b8; font-weight: 700;
+  letter-spacing: 1px; text-transform: uppercase; margin-bottom: 10px;
+}
+.sectionHeader { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.sectionTitle  { font-size: 15px; font-weight: 800; color: #1e293b; }
+.seeAll        { background: none; border: none; color: #16a34a; font-size: 12px; cursor: pointer; font-weight: 700; font-family: inherit; }
+
+/* Quick actions */
+.actionRow     { display: flex; gap: 10px; }
+.actionPrimary {
+  flex: 1; background: #16a34a; color: #fff;
+  border: none; border-radius: 13px; padding: 14px 10px;
+  font-size: 12px; font-weight: 800; cursor: pointer;
+  font-family: inherit; box-shadow: 0 4px 14px rgba(22,163,74,0.25);
+}
+.actionSecondary {
+  flex: 1; background: #fff; color: #d97706;
+  border: 2px solid rgba(217,119,6,0.3); border-radius: 13px; padding: 14px 10px;
+  font-size: 12px; font-weight: 800; cursor: pointer; font-family: inherit;
+}
+
+/* Plan card */
+.planCard {
+  background: linear-gradient(135deg, #f0fdf4, #ffffff);
+  border: 1.5px solid rgba(22,163,74,0.2);
+  border-radius: 16px; padding: 16px; margin-top: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.planTop    { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.planName   { font-size: 11px; color: #16a34a; font-weight: 700; letter-spacing: 1px; }
+.planMeals  { font-size: 20px; font-weight: 900; margin-top: 4px; color: #1e293b; }
+.planBar    { height: 5px; background: #e2e8f0; border-radius: 3px; margin-bottom: 6px; overflow: hidden; }
+.planBarFill{ height: 100%; background: linear-gradient(90deg, #15803d, #16a34a); border-radius: 3px; transition: width 0.6s ease; }
+.planMeta   { display: flex; justify-content: space-between; font-size: 11px; color: #94a3b8; }
+.planManage { background: none; border: none; color: #16a34a; font-size: 11px; cursor: pointer; font-weight: 700; font-family: inherit; }
+
+/* Macro card */
+.macroCard  { background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 14px; margin-top: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
+.macroGrid  { display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; }
+.macroItem  { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.macroLabel { font-size: 10px; color: #94a3b8; font-weight: 600; }
+.macroVal   { font-size: 11px; font-weight: 900; }
+
+/* Item cards */
+.itemList { display: flex; flex-direction: column; gap: 10px; }
+.itemCard {
+  background: #fff; border: 1px solid #e2e8f0;
+  border-radius: 14px; padding: 13px;
+  display: flex; align-items: center; gap: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  transition: box-shadow 0.15s;
+}
+.itemCard:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+.itemEmoji {
+  width: 50px; height: 50px; border-radius: 12px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; font-size: 24px;
+}
+.itemBody  { flex: 1; min-width: 0; }
+.itemName  { font-size: 13px; font-weight: 700; margin-bottom: 4px; line-height: 1.2; color: #1e293b; }
+.itemTags  { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 5px; }
+.itemMacros{ display: flex; gap: 10px; }
+.itemRight { text-align: right; flex-shrink: 0; }
+.itemPrice { font-size: 15px; font-weight: 900; color: #16a34a; margin-bottom: 8px; }
+
+.addBtn {
+  background: #16a34a; color: #fff; border: none;
+  border-radius: 8px; width: 32px; height: 32px;
+  font-size: 20px; cursor: pointer; font-weight: 900; font-family: inherit;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 2px 8px rgba(22,163,74,0.3);
+}
+.qtyRow { display: flex; align-items: center; gap: 6px; }
+.qtyBtn {
+  width: 28px; height: 28px; border-radius: 7px;
+  background: #f1f5f9; border: 1px solid #e2e8f0; color: #475569;
+  font-size: 18px; cursor: pointer; font-family: inherit;
+  display: flex; align-items: center; justify-content: center;
+}
+.qtyNum { font-size: 15px; font-weight: 900; min-width: 16px; text-align: center; color: #1e293b; }
+
+/* WhatsApp */
+.waCard {
+  margin-top: 20px; background: #f0fdf4;
+  border: 1px solid rgba(37,211,102,0.25); border-radius: 14px; padding: 16px;
+  margin-bottom: 10px;
+}
+.waHeader { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.waTitle  { font-size: 14px; font-weight: 800; color: #1e293b; }
+.waSub    { font-size: 12px; color: #94a3b8; }
+.waRow    { display: flex; gap: 10px; }
+.waBtnPrimary {
+  flex: 1; background: #25d366; color: #fff;
+  border-radius: 10px; padding: 11px 10px;
+  text-align: center; font-size: 12px; font-weight: 800;
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+}
+.waBtnOutline {
+  flex: 1; background: #fff; color: #25d366;
+  border: 1.5px solid rgba(37,211,102,0.4);
+  border-radius: 10px; padding: 11px 10px;
+  text-align: center; font-size: 12px; font-weight: 800;
+}
+
